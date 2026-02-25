@@ -4,7 +4,7 @@ const Hero = () => {
       <h2 className="text-4xl font-bold mb-4">
         Full Stack Developer
       </h2>
-      <p className="text-gray-400 max-w-xl mx-auto mb-6">
+      <p className="text-gray-700/70 max-w-xl mx-auto mb-6">
         I build web applications using React, Node.js, Express, and MongoDB.
       </p>
       <a
