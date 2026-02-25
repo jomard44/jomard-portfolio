@@ -1,4 +1,4 @@
-const ProjectCard = ({ title, desc, tech, link}) => {
+const ProjectCard = ({ title, desc, tech, link, live}) => {
   return (
     <div className="bg-gray-300/30 p-6 rounded-xl">
       <h3 className="text-xl font-bold mb-2">{title}</h3>
@@ -11,7 +11,16 @@ const ProjectCard = ({ title, desc, tech, link}) => {
       >
         View Code
       </a>
-       
+       {live && (
+          <a
+            href={live}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-blue-400 px-5 py-1 ml-4 rounded hover:text-white"
+          >
+            Live Demo
+          </a>
+        )}
     </div>
   );
 };
@@ -28,6 +37,7 @@ const Projects = () => {
           desc="Full-stack application to manage job applications with authentication and CRUD operations."
           tech="React, Node.js, Express, MongoDB"
           link="https://github.com/jomard44/job-tracker-backend"
+          live="https://trackmyjobapp.com"
         />
 
         <ProjectCard

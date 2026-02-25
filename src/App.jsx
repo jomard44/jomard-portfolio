@@ -9,13 +9,15 @@ import About from "./components/About";
 function App() {
   return (
     <>
+
       <Navbar />
       <Hero />
-
-      <Projects />
       <About />
+      <Projects />
+
       <Skills />
       <Contact />
+      
     </>
   );
 }
