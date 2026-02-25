@@ -1,6 +1,11 @@
 const Hero = () => {
   return (
     <section className="text-center py-24 px-4 max-w-4xl mx-auto">
+     <img
+  src="/profile.jpeg"
+  className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-slate-700 mb-6"
+/>
+
       <h2 className="text-4xl md:text-5xl font-bold mb-4">
         Hi, I’m Jomard
       </h2>
