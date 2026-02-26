@@ -1,5 +1,6 @@
 const ProjectCard = ({ title, desc, tech, link, live }) => {
   return (
+    <div className="bg-white/5 border border-white/10 backdrop-blur-md rounded-2xl p-6">
     <div className="bg-gray-300/30 p-6 rounded-xl">
       <h3 className="text-xl font-bold mb-2">{title}</h3>
       <p className="text-gray-700/70 mb-3">{desc}</p>
@@ -17,6 +18,7 @@ const ProjectCard = ({ title, desc, tech, link, live }) => {
           Live Demo
         </a>
       )}
+    </div>
     </div>
   );
 };
